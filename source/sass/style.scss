@@ -1,3 +1,10 @@
-h1 {
-  color: red;
-}
+@import "variables.scss";
+@import "scaffolding.scss";
+@import "blocks/header.scss";
+@import "blocks/main.scss";
+@import "blocks/training.scss";
+@import "blocks/subscription.scss";
+@import "blocks/promo.scss";
+@import "blocks/trainer.scss";
+@import "blocks/advantage.scss";
+@import "blocks/footer.scss";
