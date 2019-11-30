@@ -23,8 +23,8 @@
     <div class="main-wrapper">
       <div class="main-wrapper__content">
         <div class="main__content">
-          <h2 class="main__title-second">Омск</h2>
-          <h1 class="main__title">Фитнес Центр</h1>
+          <h2>Омск</h2>
+          <h1>Фитнес Центр</h1>
           <ul class="main__list">
             <li class="main__item">Тренажёрный зал</li>
             <li class="main__item">Групповые занятия</li>
@@ -39,8 +39,79 @@
         </ul>
       </div>
     </div>
+    <section class="training">
+      <div class="training-wrapper">
+        <div class="training-text">
+          <h2>Тренажерный зал</h2>
+          <h3>Просторный зал площадью 900 кв/м</h3>
+          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
+        </div>
+        <div class="training__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/training-mob@1x.webp 1x, img/webp/training-mob@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/webp/training-lap@1x.webp 1x, img/webp/training-lap@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="img/training-mob@1x.jpg 1x, img/training-mob@2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/training-lap@1x.jpg 1x, img/training-lap@2x.jpg 2x">
+            <source type="image/webp" srcset="img/webp/training@1x.webp 1x, img/webp/training@2x.webp 2x">
+            <img class="training__image" src="img/training@1x.jpg" srcset="img/training@2x.jpg 2x" alt="Тренажерный зал">
+          </picture>
+          <div class="training__video-wrapper">
+            <video class="training__video"></video>
+            <button class="training__video-play" type="button" aria-label="Воспроизвести"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscription" id="subscription">
+      <div class="subscription-wrapper">
+        <h2>Абонементы</h2>
+        <ul class="month__list">
+          <li class="month__item">
+            <a class="month__item-link" href="#">1 месяц</a>
+          </li>
+          <li class="month__item">
+            <a class="month__item-link" href="#">6 месяцев</a>
+          </li>
+          <li class="month__item">
+            <a class="month__item-link" href="#">12 месяцев</a>
+          </li>
+        </ul>
+        <ul class="subscription__list">
+          <li class="subscription__item">
+            <h3>С тренером</h3>
+            <h4>12 занятий</h4>
+            <p>5000
+              <span class="subscription__ruble">&#8381;</span>
+              <span class="subscription__shadow">5000</span>
+            </p>
+            <a class="button subscription__button" href="#">Купить абонемент</a>
+          </li>
+          <li class="subscription__item">
+            <h3>Дневной</h3>
+            <h4>с 8:00 до 17:00</h4>
+            <p>1700
+              <span class="subscription__ruble">&#8381;</span>
+              <span class="subscription__shadow">1700</span>
+            </p>
+            <a class="button subscription__button" href="#">Купить абонемент</a>
+          </li>
+          <li class="subscription__item">
+            <h3>Полный день</h3>
+            <h4>с 8:00 до 22:00</h4>
+            <p>2700
+              <span class="subscription__ruble">&#8381;</span>
+              <span class="subscription__shadow">2700</span>
+            </p>
+            <a class="button subscription__button" href="#">Купить абонемент</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="promo"></section>
   </main>
   <footer class="footer">
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
