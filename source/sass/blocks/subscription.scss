@@ -1,14 +1,25 @@
 .subscription {
   padding: 118px 15px;
-  background-image: url("../img/subscription@1x.png");
-  background-size: 470px;
-  background-position: left calc(50% + 631px) bottom -151px;
-  background-repeat: no-repeat;
+  position: relative;
   background-color: #f8f9fc;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 86px;
+    bottom: -151px;
+    height: 494px;
+    width: 470px;
+    background-image: url("../img/subscription@1x.png");
+    background-size: 470px 494px;
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .main-wrapper {
+  .subscription::after {
     background-image: url("../img/subscription@2x.png");
   }
 }
@@ -17,6 +28,8 @@
   margin: 0 auto;
   text-align: center;
   max-width: $desktop-width;
+  position: relative;
+  z-index: 1;
 }
 
 .subscription h2 {
