@@ -1,27 +1,6 @@
 .subscription {
-  padding: 118px 15px;
-  position: relative;
+  padding: 118px 15px 119px;
   background-color: #f8f9fc;
-
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    right: 86px;
-    bottom: -151px;
-    height: 494px;
-    width: 470px;
-    background-image: url("../img/subscription@1x.png");
-    background-size: 470px 494px;
-    background-position: left top;
-    background-repeat: no-repeat;
-  }
-}
-
-@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .subscription::after {
-    background-image: url("../img/subscription@2x.png");
-  }
 }
 
 .subscription-wrapper {
@@ -29,7 +8,6 @@
   text-align: center;
   max-width: $desktop-width;
   position: relative;
-  z-index: 1;
 }
 
 .subscription h2 {
@@ -151,6 +129,26 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -286px;
+    bottom: -269px;
+    height: 494px;
+    width: 470px;
+    background-image: url("../img/subscription@1x.png");
+    background-size: 470px 494px;
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .subscription__list::after {
+    background-image: url("../img/subscription@2x.png");
+  }
 }
 
 .subscription__item {
@@ -159,6 +157,7 @@
   padding-bottom: 68px;
   width: 31%;
   background-color: $white;
+  z-index: 1;
 
   &:hover,
   &:focus {
@@ -202,15 +201,6 @@
 @media (max-width: $laptop-width) {
   .subscription {
     padding: 99px 0 100px;
-    background-image: url("../img/subscription-lap@1x.png");
-    background-size: 423px;
-    background-position: left calc(50% + 249px) bottom -125px;
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .main-wrapper {
-      background-image: url("../img/subscription-lap@2x.png");
-    }
   }
 
   .subscription-wrapper {
@@ -249,12 +239,28 @@
   .subscription__list {
     display: block;
     width: 100%;
+
+    &::after {
+      right: -76px;
+      bottom: -225px;
+      height: 444px;
+      width: 423px;
+      background-image: url("../img/subscription-lap@1x.png");
+      background-size: 423px 444px;
+    }
+  }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .subscription__list::after {
+      background-image: url("../img/subscription-lap@2x.png");
+    }
   }
 
   .subscription__item {
     padding-top: 63px;
     padding-left: 117px;
     padding-right: 117px;
+    position: relative;
     width: 100%;
 
     &:hover,
@@ -285,12 +291,15 @@
 @media (max-width: $mobile-width) {
   .subscription {
     padding: 70px 0;
-    background-image: none;
   }
 
   .subscription-wrapper {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .subscription__list::after {
+    content: none;
   }
 
   .subscription h2 {
