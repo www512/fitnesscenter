@@ -1,5 +1,5 @@
 .stock {
-  padding: 120px 15px;
+  padding: 118px 15px ;
 }
 
 .stock-wrapper {
@@ -10,7 +10,7 @@
 
 .stock h2 {
   margin: 0;
-  margin-bottom: 0;
+  margin-bottom: 52px;
   font-family: $bebas;
   font-size: 49px;
   line-height: 49px;
@@ -31,15 +31,18 @@
 .stock__ad {
   display: flex;
   justify-content: space-between;
+  width: calc(50% - 20px);
 }
 
 .stock__ad picture {
+  display: flex;
   width: 50%;
+
 }
 
 .stock__year {
   box-sizing: border-box;
-  padding: 34px 46px 46px;
+  padding: 36px 40px 46px 46px;
   display: flex;
   flex-direction: column;
   background-color: #ed0233;
@@ -53,7 +56,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
-  line-height: 156%;
+  line-height: 130%;
 }
 
 .stock__year p {
@@ -67,15 +70,17 @@
 
 .stock__year .stock__year-coast {
   margin: 0;
+  margin-bottom: 20px;
   font-family: $roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 70px;
-  line-height: 156%;
+  line-height: 100%;
 }
 
 .stock__year-link {
   margin-top: auto;
+  margin-right: auto;
   position: relative;
   font-family: $roboto;
   font-style: normal;
@@ -91,9 +96,97 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
     height: 1px;
     background-color: $white;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    content: none;
+  }
+
+  &:active::before {
+    content: "";
+  }
+}
+
+.stock__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: calc(50% - 20px);
+}
+
+.stock__item {
+  padding: 25px 35px 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 211px;
+  box-sizing: border-box;
+  background-image: url("../img/stock-border.svg");
+  background-size: 100% 100%;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.stock__item:not(:first-of-type) {
+  margin-top: 40px;
+}
+
+.stock__item h3 {
+  margin: 0;
+  margin-bottom: 3px;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 150%;
+  color: #1c3374;
+}
+
+.stock__item p {
+  margin: 0;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #1c3374;
+}
+
+.stock__item a {
+  margin-top: auto;
+  margin-right: auto;
+  position: relative;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1c3374;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: #1c3374;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    content: none;
+  }
+
+  &:active::before {
+    content: "";
   }
 }
