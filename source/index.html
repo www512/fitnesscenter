@@ -66,15 +66,15 @@
     <section class="subscription" id="subscription">
       <div class="subscription-wrapper">
         <h2>Абонементы</h2>
-        <ul class="month__list">
-          <li class="month__item">
-            <a class="month__item-link" href="#">1 месяц</a>
+        <ul class="subscription__month-list">
+          <li class="subscription__month-item">
+            <a class="subscription__month-item-link" href="#">1 месяц</a>
           </li>
-          <li class="month__item">
-            <a class="month__item-link" href="#">6 месяцев</a>
+          <li class="subscription__month-item">
+            <a class="subscription__month-item-link" href="#">6 месяцев</a>
           </li>
-          <li class="month__item">
-            <a class="month__item-link" href="#">12 месяцев</a>
+          <li class="subscription__month-item">
+            <a class="subscription__month-item-link" href="#">12 месяцев</a>
           </li>
         </ul>
         <ul class="subscription__list">
@@ -318,11 +318,46 @@
       </div>
     </section>
     <section class="contact">
-      <div class="content-wrapper"></div>
+      <div class="contact-wrapper">
+        <div class="form">
+          <h2>Бесплатное занятие</h2>
+          <form class="filter" action="/echo" method="get">
+            <div class="filter__type">
+              <label class="visually-hidden" for="name">Имя</label>
+              <input class="filter__input" type="text" name="name" id="name" placeholder="Имя" required>
+              <label class="visually-hidden" for="phone">Телефон</label>
+              <input class="filter__input" type="text" name="phone" id="phone" placeholder="Телефон" required>
+            </div>
+            <button class="button form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+        <div class="address">
+          <h2>Контакты</h2>
+          <ul class="address__list">
+            <li class="address__item">
+              <h3>Адрес:</h3>
+              <p>г. Омск, ул. 60 лет Октября, 7</p>
+            </li>
+            <li class="address__item">
+              <h3>Телефон:</h3>
+              <a href="tel:88005555555">8-800-555-55-55</a>
+            </li>
+            <li class="address__item">
+              <h3>График работы:</h3>
+              <p>Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+            <li class="address__item">
+              <h3>Email:</h3>
+              <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer">
   </footer>
+  <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
