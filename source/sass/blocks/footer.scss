@@ -15,19 +15,23 @@
 .footer__list {
   margin: 0;
   padding: 0;
-  margin-left: 21px;
   margin-bottom: 3px;
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   box-sizing: border-box;
+  flex-grow: 1;
 }
 
 .footer__item:not(:last-of-type) {
   margin-right: 40px;
 }
 
-.footer__item a {
+.footer__item:first-of-type {
+  margin-right: 26.5%;
+}
+
+.footer__item-link {
   text-decoration: none;
   font-family: $roboto;
   font-style: normal;
@@ -35,6 +39,29 @@
   font-size: 14px;
   line-height: 16px;
   color: $white;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 1px;
+    background-color: $white;
+    transition: width .2s ease-in-out;
+    transform:translateX(-50%);
+  }
+
+  &:hover::after,
+  &:focus::after {
+    width: 100%;
+  }
+
+  &:active::after {
+    width: 0%;
+    transition: width 0s ease-in-out;
+  }
 }
 
 .social__list {
@@ -50,6 +77,19 @@
   margin-right: 25px;
 }
 
+.social__icon {
+  fill: $white;
+}
+
+.social__item a:hover > .social__icon,
+.social__item a:focus > .social__icon {
+  fill: rgba(255, 255, 255, .5);
+}
+
+.social__item a:active > .social__icon {
+  fill: $white;
+}
+
 @media (max-width: $laptop-width) {
   .footer {
     padding: 42px 45px 38px;
@@ -57,12 +97,14 @@
 
   .footer__list {
     margin: 0;
-    margin-left: 18px;
-    margin-bottom: 2px;
   }
 
   .footer__item:not(:last-of-type) {
     margin-right: 30px;
+  }
+
+  .footer__item:first-of-type {
+    margin-right: 10.9%;
   }
 
   .social__list {
@@ -76,19 +118,30 @@
 
 @media (max-width: $mobile-width) {
   .footer {
-    padding: 42px 45px 43px;
+    padding: 48px 15px 43px;
   }
 
   .footer__list {
-    margin: 0;
+    margin: 0 auto 33px;
+    width: 100%;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer__item {
+    width: calc(50% - 12px);
+    margin-top: 14px;
   }
 
   .footer__item:not(:last-of-type) {
     margin-right: 0;
   }
 
-  .footer__item a {
+  .footer__item:first-of-type {
+    margin-right: 0;
+  }
+
+  .footer__item-link {
     font-size: 16px;
     line-height: 19px;
   }
@@ -115,5 +168,21 @@
   .social__icon-facebook {
     width: 14px;
     height: 27px;
+  }
+
+  .footer__item-service {
+    order: 1;
+  }
+
+  .footer__item-subscription {
+    order: 2;
+  }
+
+  .footer__item-trainer {
+    order: 1;
+  }
+
+  .footer__item-schedule {
+    order: 2;
   }
 }

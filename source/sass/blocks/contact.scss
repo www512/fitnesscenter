@@ -187,16 +187,39 @@
   line-height: 21px;
   text-decoration: none;
   color: $black;
+  position: relative;
+
+    &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    width: 0%;
+    height: 1px;
+    background-color: $black;
+    transition: width .2s ease-in-out;
+    transform:translateX(-50%);
+  }
+
+  &:hover::after,
+  &:focus::after {
+    width: 100%;
+  }
+
+  &:active::after {
+    width: 0%;
+    transition: width 0s ease-in-out;
+  }
 }
 
-.address__item a:hover,
+/*.address__item a:hover,
 .address__item a:focus {
   text-decoration: underline;
 }
 
 .address__item a:active {
   text-decoration: none;
-}
+}*/
 
 @media (max-width: $laptop-width) {
   .contact {
@@ -289,7 +312,7 @@
 
 @media (max-width: $mobile-width) {
   .contact {
-    padding: 30px 0 22px;
+    padding: 30px 0 23px;
   }
 
   .form {
