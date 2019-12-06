@@ -148,7 +148,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, calc(-50% + 4px));
+  transform: translateX(-50%) translateY(-50%) translateY(4px);
   width: 20.69%;
   background-color: #1c3374;
   color: $white;
