@@ -81,7 +81,6 @@
 
 .stock__year-link {
   margin-top: auto;
-  margin-right: auto;
   position: relative;
   font-family: $roboto;
   font-style: normal;
@@ -124,7 +123,7 @@
   padding: 25px 35px 37px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: flex-start;
   min-height: 211px;
   box-sizing: border-box;
   background-image: url("../img/stock-border.svg");
@@ -160,7 +159,6 @@
 
 .stock__item a {
   margin-top: auto;
-  margin-right: auto;
   position: relative;
   font-family: $roboto;
   font-style: normal;
@@ -299,6 +297,7 @@
     padding: 36px 15px 48px;
     width: 100%;
     background-image: url("../img/stock-border-mob.svg");
+    align-items: center;
   }
 
   .stock__item:not(:first-of-type) {
