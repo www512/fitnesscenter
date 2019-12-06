@@ -126,7 +126,7 @@
 
 .promo__image {
   display: block;
-  width: 100%;
+  width: 660px;
   background-image: url("../img/promo@1x.png");
   background-size: 660px;
   background-position: left top;
@@ -209,6 +209,7 @@
   }
 
   .promo__image {
+    width: 386px;
     background-image: url("../img/promo-lap@1x.png");
     background-size: 386px;
   }

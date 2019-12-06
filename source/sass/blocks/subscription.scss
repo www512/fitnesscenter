@@ -25,6 +25,7 @@
   display: block;
   text-decoration: none;
   cursor: pointer;
+  position: relative;
 
   &:hover,
   &:focus {
@@ -211,6 +212,15 @@
   border: 2px solid $black;
   background: transparent;
   color: $black;
+}
+
+.subscription__item a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 @media (max-width: $laptop-width) {
