@@ -11,8 +11,8 @@
 
 .training-text {
   width: 355px;
-  margin-top: 47px;
-  margin-left: 60px;
+  padding-top: 47px;
+  padding-left: 60px;
 }
 
 .training h2 {
@@ -126,6 +126,7 @@
 
   .training-text {
     width: 100%;
+    padding: 0;
     margin-top: 0;
     margin-left: 0;
   }

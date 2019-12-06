@@ -20,6 +20,18 @@
 .stock__image {
   display: block;
   width: 280px;
+  height: 462px;
+  background-image: url("../img/stock@1x.png");
+  background-size: 280px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .promo__image {
+    background-image: url("../img/stock@2x.png");
+  }
 }
 
 .stock__content {
@@ -211,6 +223,14 @@
 
   .stock__image {
     width: 399px;
+    background-image: url("../img/stock-lap@1x.png");
+    background-size: 399px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .promo__image {
+      background-image: url("../img/stock-lap@2x.png");
+    }
   }
 
   .stock__year {
@@ -288,6 +308,15 @@
 
   .stock__image {
     width: 290px;
+    height: 299px;
+    background-image: url("../img/stock-mob@1x.png");
+    background-size: 290px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .promo__image {
+      background-image: url("../img/stock-mob@2x.png");
+    }
   }
 
   .stock__list {

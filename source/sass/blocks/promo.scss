@@ -127,6 +127,17 @@
 .promo__image {
   display: block;
   width: 100%;
+  background-image: url("../img/promo@1x.png");
+  background-size: 660px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .promo__image {
+    background-image: url("../img/promo@2x.png");
+  }
 }
 
 @media (max-width: $laptop-width) {
@@ -196,6 +207,17 @@
   .promo-wrapper picture {
     flex-grow: 1;
   }
+
+  .promo__image {
+    background-image: url("../img/promo-lap@1x.png");
+    background-size: 386px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .promo__image {
+      background-image: url("../img/promo-lap@2x.png");
+    }
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -204,7 +226,7 @@
   }
 
   .promo-wrapper {
-    width: 320px;
+    width: 290px;
     display: block;
   }
 
@@ -219,5 +241,17 @@
 
   .promo h2 {
     max-width: none;
+  }
+
+  .promo__image {
+    height: 292px;
+    background-image: url("../img/promo-mob@1x.png");
+    background-size: 290px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .promo__image {
+      background-image: url("../img/promo-mob@2x.png");
+    }
   }
 }
