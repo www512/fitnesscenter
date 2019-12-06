@@ -46,3 +46,15 @@ if (form) {
     }
   });
 }
+
+//Footer
+// let logo = document.getElementById('logo');
+// let year = document.querySelector('.license-list__year');
+
+// if (logo && year) {
+//   let yearClone = year.cloneNode(true);
+
+//   yearClone.classList.add('footer-year');
+//   year.classList.add('footer-year-off');
+//   logo.after(yearClone);
+// }

@@ -4,19 +4,22 @@
 
 .contact-wrapper {
   margin: 0 auto;
-  max-width: 1366px;
   display: flex;
   justify-content: center;
 }
 
+.form-wrapper {
+  background-color: $black;
+  width: 50%;
+}
+
 .form {
+  margin-left: auto;
   padding-top: 61px;
-  padding-left: 7.5%;
+  padding-left: 10.8%;
   padding-right: 15px;
   padding-bottom: 70px;
   max-width: 683px;
-  width: 100%;
-  background-color: $black;
   box-sizing: border-box;
 }
 
@@ -107,12 +110,15 @@
   border: 3px solid $white;
 }
 
+.address-wrapper {
+  width: 50%;
+  border-top: 1px solid #74819C;
+}
+
 .address {
   padding: 61px 10px 20px;
   max-width: 683px;
   width: 100%;
-  border-top: 1px solid #74819C;
-  border-right: 1px solid #74819C;
   box-sizing: border-box;
 }
 
@@ -221,7 +227,12 @@
     display: block;
   }
 
+  .form-wrapper {
+    width: 100%;
+  }
+
   .form {
+    margin-left: 0;
     padding: 0;
     padding-top: 69px;
     padding-left: 133px;
@@ -246,6 +257,11 @@
 
   .filter__input {
     width: calc(50% - 30px);
+  }
+
+  .address-wrapper {
+    border: none;
+    width: 100%;
   }
 
   .address {
