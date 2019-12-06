@@ -44,6 +44,7 @@
   padding: 36px 40px 46px 46px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   background-color: #ed0233;
   color: $white;
   width: 50%;
@@ -60,6 +61,7 @@
 
 .stock__year p {
   margin: 0;
+  width: 100%;
   font-family: $roboto;
   font-style: normal;
   font-weight: normal;
@@ -274,6 +276,7 @@
   .stock__year {
     padding: 37px 50px 46px 50px;
     width: 100%;
+    align-items: center;
   }
 
   .stock__year .stock__year-coast {
