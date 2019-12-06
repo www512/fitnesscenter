@@ -93,10 +93,18 @@
   padding: 0;
   padding-bottom: 11px;
   list-style: none;
-  width: 341px;
-  display: flex;
-  justify-content: space-between;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.subscription__month-item {
+  margin-right: 46px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .subscription__month-item-link {
