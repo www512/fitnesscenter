@@ -19,7 +19,7 @@
 
 .stock__image {
   display: block;
-  width: 100%;
+  width: 280px;
 }
 
 .stock__content {
@@ -32,11 +32,6 @@
   display: flex;
   justify-content: space-between;
   width: calc(50% - 20px);
-}
-
-.stock__ad picture {
-  display: flex;
-  width: 50%;
 }
 
 .stock__year {
@@ -203,22 +198,23 @@
   }
 
   .stock__content {
+    margin: 0 auto;
     display: block;
+    width: 678px;
   }
 
   .stock__ad {
     margin-bottom: 30px;
-    width: 100%;
+    width: 678px;
   }
 
-  .stock__ad picture {
-    display: block;
-    width: 100%;
+  .stock__image {
+    width: 399px;
   }
 
   .stock__year {
     padding: 36px 40px 46px 46px;
-    width: 61.056%;
+    width: 279px;
   }
 
   .stock__list {
@@ -254,6 +250,7 @@
 
   .stock__content {
     text-align: center;
+    width: 290px;
   }
 
   .stock h2 {
@@ -284,6 +281,10 @@
 
   .stock__year-link {
     margin: 31px auto 0;
+  }
+
+  .stock__image {
+    width: 290px;
   }
 
   .stock__list {
