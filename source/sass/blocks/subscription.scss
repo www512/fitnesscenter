@@ -255,7 +255,10 @@
   .subscription__month-list {
     margin: 0 auto 44px;
     padding-bottom: 11px;
-    width: 332px;
+  }
+
+  .subscription__month-item {
+    margin-right: 55px;
   }
 
   .subscription__month-item-link {
