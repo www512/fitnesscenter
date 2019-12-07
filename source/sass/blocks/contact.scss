@@ -16,10 +16,9 @@
 .form {
   margin-left: auto;
   padding-top: 61px;
-  padding-left: 10.8%;
-  padding-right: 15px;
   padding-bottom: 70px;
-  max-width: 683px;
+  margin-right: 17.8%;
+  width: 410px;
   box-sizing: border-box;
 }
 
@@ -32,10 +31,10 @@
   letter-spacing: 0.03em;
   color: $white;
 }
-
+/*
 .filter {
   margin-right: 27.5%;
-}
+}*/
 
 .filter__type {
   margin-bottom: 27px;
@@ -238,7 +237,7 @@
     padding-left: 133px;
     padding-right: 163px;
     padding-bottom: 68px;
-    max-width: 100%;
+    width: 100%;
   }
 
   .form h2 {
