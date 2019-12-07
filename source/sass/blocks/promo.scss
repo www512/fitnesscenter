@@ -4,15 +4,23 @@
 
 .promo-wrapper {
   margin: 0 auto;
-  max-width: $desktop-width;
-  display: flex;
-  justify-content: center;
+  width: $desktop-width;
+  background-image: url("../img/promo@1x.png");
+  background-size: 660px;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-color: #ed0233;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .promo-wrapper {
+    background-image: url("../img/promo@2x.png");
+  }
 }
 
 .promo__content {
   box-sizing: border-box;
   padding: 83px 76px 85px;
-  background-color: #ed0233;
   width: 500px;
 }
 
@@ -120,26 +128,6 @@
   background: none;
 }
 
-.promo-wrapper picture {
-  display: flex;
-}
-
-.promo__image {
-  display: block;
-  width: 660px;
-  background-image: url("../img/promo@1x.png");
-  background-size: 660px;
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-color: transparent;
-}
-
-@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .promo__image {
-    background-image: url("../img/promo@2x.png");
-  }
-}
-
 @media (max-width: $laptop-width) {
   .promo {
     padding: 100px 45px 49px;
@@ -147,6 +135,14 @@
 
   .promo-wrapper {
     width: 678px;
+    background-image: url("../img/promo-lap@1x.png");
+    background-size: 386px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .promo-wrapper {
+      background-image: url("../img/promo-lap@2x.png");
+    }
   }
 
   .promo__content {
@@ -203,22 +199,6 @@
     line-height: 12px;
     border: 2px solid $white;
   }
-
-  .promo-wrapper picture {
-    flex-grow: 1;
-  }
-
-  .promo__image {
-    width: 386px;
-    background-image: url("../img/promo-lap@1x.png");
-    background-size: 386px;
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .promo__image {
-      background-image: url("../img/promo-lap@2x.png");
-    }
-  }
 }
 
 @media (max-width: $mobile-width) {
@@ -227,8 +207,18 @@
   }
 
   .promo-wrapper {
+    padding-bottom: 292px;
     width: 290px;
     display: block;
+    background-image: url("../img/promo-mob@1x.png");
+    background-size: 290px;
+    background-position: center bottom;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .promo-wrapper {
+      background-image: url("../img/promo-mob@2x.png");
+    }
   }
 
   .promo__content {
@@ -242,17 +232,5 @@
 
   .promo h2 {
     max-width: none;
-  }
-
-  .promo__image {
-    height: 292px;
-    background-image: url("../img/promo-mob@1x.png");
-    background-size: 290px;
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .promo__image {
-      background-image: url("../img/promo-mob@2x.png");
-    }
   }
 }

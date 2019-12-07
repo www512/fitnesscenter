@@ -17,23 +17,6 @@
   letter-spacing: 0.03em;
 }
 
-.stock__image {
-  display: block;
-  width: 280px;
-  height: 462px;
-  background-image: url("../img/stock@1x.png");
-  background-size: 280px;
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-color: transparent;
-}
-
-@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .stock__image {
-    background-image: url("../img/stock@2x.png");
-  }
-}
-
 .stock__content {
   display: flex;
   justify-content: space-between;
@@ -41,10 +24,18 @@
 }
 
 .stock__ad {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   width: calc(50% - 20px);
+  background-image: url("../img/stock@1x.png");
+  background-size: 280px;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-color: #ed0233;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .stock__ad {
+    background-image: url("../img/stock@2x.png");
+  }
 }
 
 .stock__year {
@@ -53,7 +44,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #ed0233;
   color: $white;
   width: 50%;
   min-height: 462px;
@@ -219,16 +209,12 @@
   .stock__ad {
     margin-bottom: 30px;
     width: 678px;
-  }
-
-  .stock__image {
-    width: 399px;
     background-image: url("../img/stock-lap@1x.png");
     background-size: 399px;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .stock__image {
+    .stock__ad {
       background-image: url("../img/stock-lap@2x.png");
     }
   }
@@ -281,13 +267,17 @@
   }
 
   .stock__ad {
-    display: block;
+    padding-bottom: 299px;
     width: 100%;
+    background-image: url("../img/stock-mob@1x.png");
+    background-position: center bottom;
+    background-size: 290px;
   }
 
-  .stock__ad picture {
-    display: block;
-    width: 100%;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .stock__ad {
+      background-image: url("../img/stock-mob@2x.png");
+    }
   }
 
   .stock__year {
@@ -304,19 +294,6 @@
 
   .stock__year-link {
     margin: 31px auto 0;
-  }
-
-  .stock__image {
-    width: 290px;
-    height: 299px;
-    background-image: url("../img/stock-mob@1x.png");
-    background-size: 290px;
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .stock__image {
-      background-image: url("../img/stock-mob@2x.png");
-    }
   }
 
   .stock__list {
