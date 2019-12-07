@@ -24,8 +24,8 @@
   letter-spacing: 0.03em;
 }
 
-.training h3 {
-  margin: 0;
+.training-text-subtitle {
+  display: inline-block;
   margin-bottom: 38px;
   font-family: $roboto;
   font-style: normal;
@@ -145,7 +145,7 @@
     line-height: 42px;
   }
 
-  .training h3 {
+  .training-text-subtitle {
     margin-bottom: 34px;
     font-size: 18px;
   }
@@ -155,7 +155,11 @@
     padding: 0 51px;
   }
 
-  .training-text p:not(:first-of-type) {
+  .training-text p:first-of-type {
+    margin-bottom: 0;
+  }
+
+  .training-text p:not(:nth-child(-n+3)) {
     display: none;
   }
 
@@ -217,7 +221,7 @@
     line-height: 32px;
   }
 
-  .training h3 {
+  .training-text-subtitle {
     margin: 0 15px 24px;
   }
 

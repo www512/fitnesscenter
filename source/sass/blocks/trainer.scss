@@ -62,7 +62,7 @@
   color: $white;
 }
 
-.trainer__link h4 {
+.trainer__link p {
   margin: 0;
   margin-bottom: 36px;
   font-family: $roboto;
@@ -188,7 +188,7 @@
 
 .trainer__link-list {
   margin: 0;
-  margin-left: 32px;
+  margin-left: 26px;
   list-style-type: disc;
   text-align: left;
   font-family: $roboto;
@@ -352,7 +352,7 @@
     top: 42px;
   }
 
-  .trainer__link h4 {
+  .trainer__link p {
     margin-bottom: 37px;
   }
 

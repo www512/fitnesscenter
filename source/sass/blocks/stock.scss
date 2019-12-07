@@ -49,8 +49,8 @@
   min-height: 462px;
 }
 
-.stock__year h3 {
-  margin: 0;
+.stock__year-title {
+  display: inline-block;
   font-family: $roboto;
   font-style: normal;
   font-weight: bold;
@@ -69,7 +69,7 @@
 }
 
 .stock__year-coast {
-  margin: 0;
+  display: inline-block;
   margin-bottom: 20px;
   font-family: $roboto;
   font-style: normal;
