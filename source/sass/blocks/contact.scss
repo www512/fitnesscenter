@@ -16,7 +16,7 @@
 .form {
   margin-left: auto;
   padding-top: 61px;
-  padding-bottom: 70px;
+  padding-bottom: 69px;
   margin-right: 17.8%;
   width: 410px;
   box-sizing: border-box;
@@ -31,10 +31,6 @@
   letter-spacing: 0.03em;
   color: $white;
 }
-/*
-.filter {
-  margin-right: 27.5%;
-}*/
 
 .filter__type {
   margin-bottom: 27px;
@@ -115,15 +111,14 @@
 }
 
 .address {
-  padding: 61px 10px 20px;
-  max-width: 683px;
-  width: 100%;
+  margin-left: 12.6%;
+  padding: 61px 0 61px;
+  width: 500px;
   box-sizing: border-box;
 }
 
 .address h2 {
   margin: 0;
-  margin-left: 16.5%;
   margin-bottom: 33px;
   font-family: $bebas;
   font-size: 49px;
@@ -133,8 +128,7 @@
 
 .address__list {
   margin: 0 auto;
-  padding: 0;
-  width: 500px;
+  padding: 0 5px;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -144,21 +138,17 @@
   &::after {
     content: "";
     position: absolute;
-    left: calc(50% + 13px);
+    left: calc(50% - 15px);
     top: 5px;
     width: 1px;
-    height: 89%;
+    height: 88%;
     background-color: #74819c;
   }
 }
 
 .address__item {
-  width: 178px;
+  width: 200px;
   box-sizing: border-box;
-}
-
-.address__item:nth-child(odd) {
-  margin-left: 32px;
 }
 
 .address__item:not(:nth-child(-n+2)) {
@@ -264,8 +254,9 @@
   }
 
   .address {
-    padding: 69px 10px 20px 133px;
-    max-width: 100%;
+    margin: 0 auto;
+    padding: 69px 45px 20px 133px;
+    width: 100%;
     border: none;
     box-sizing: border-box;
   }
@@ -279,21 +270,18 @@
 
   .address__list {
     margin: 0;
-    width: 100%;
+    padding: 0;
+    width: 97%;
 
     &::after {
       content: "";
-      left: calc(50% - 47px);
+      left: calc(50% - 20px);
       top: 8px;
     }
   }
 
   .address__item {
-    width: 50%;
-  }
-
-  .address__item:nth-child(odd) {
-    margin-left: 0;
+    width: calc(50% - 28px);
   }
 
   .address__item:not(:nth-child(-n+2)) {

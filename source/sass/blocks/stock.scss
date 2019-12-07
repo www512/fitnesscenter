@@ -29,7 +29,7 @@
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .promo__image {
+  .stock__image {
     background-image: url("../img/stock@2x.png");
   }
 }
@@ -228,7 +228,7 @@
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .promo__image {
+    .stock__image {
       background-image: url("../img/stock-lap@2x.png");
     }
   }
@@ -314,7 +314,7 @@
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .promo__image {
+    .stock__image {
       background-image: url("../img/stock-mob@2x.png");
     }
   }
