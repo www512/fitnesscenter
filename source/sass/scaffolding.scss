@@ -1,41 +1,50 @@
 @font-face {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Bebas Neue Regular'), local('BebasNeue-Regular'),
-        url('../fonts/bebasneue.woff2') format('woff2'),
-        url('../fonts/bebasneue.woff') format('woff');
+  src: local("Bebas Neue Regular"),
+    local("BebasNeue-Regular"),
+    url("../fonts/bebasneue.woff2") format("woff2"),
+    url("../fonts/bebasneue.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Bebas Neue Regular Bold'), local('BebasNeue-Regular-Bold'),
-        url('../fonts/bebasneue-700.woff2') format('woff2'),
-        url('../fonts/bebasneue-700.woff') format('woff');
+  src: local("Bebas Neue Regular Bold"),
+    local("BebasNeue-Regular-Bold"),
+    url("../fonts/bebasneue-700.woff2") format("woff2"),
+    url("../fonts/bebasneue-700.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'),
-        url('../fonts/roboto-condensed.woff2') format('woff2'),
-        url('../fonts/roboto-condensed.woff') format('woff');
+  src: local("Roboto Condensed"),
+    local("RobotoCondensed-Regular"),
+    url("../fonts/roboto-condensed.woff2") format("woff2"),
+    url("../fonts/roboto-condensed.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'),
-        url('../fonts/roboto-condensed-700.woff2') format('woff2'),
-        url('../fonts/roboto-condensed-700.woff') format('woff');
+  src: local("Roboto Condensed Bold"),
+    local("RobotoCondensed-Bold"),
+    url("../fonts/roboto-condensed-700.woff2") format("woff2"),
+    url("../fonts/roboto-condensed-700.woff") format("woff");
+}
+
+html,
+body {
+  height: 100%;
 }
 
 body {
@@ -43,12 +52,13 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
   font-size: 16px;
   line-height: 150%;
   font-family: $roboto;
   font-style: normal;
   color: $black;
-  font-style: normal;
   background-color: $bg-color;
   overflow-x: hidden;
 }

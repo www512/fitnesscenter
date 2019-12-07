@@ -41,7 +41,7 @@
   flex-wrap: wrap;
 }
 
-.filter__input {
+.filter input {
   padding: 0;
   font-family: $roboto;
   font-style: normal;
@@ -67,13 +67,13 @@
   }
 }
 
-.filter__input:hover,
-.filter__input:focus {
+.filter input:hover,
+.filter input:focus {
   outline: none;
   border-bottom: 2px solid $white;
 }
 
-.filter__input:active {
+.filter input:active {
   border-bottom: 2px solid #74819c;
 }
 
@@ -107,7 +107,7 @@
 
 .address-wrapper {
   width: 50%;
-  border-top: 1px solid #74819C;
+  border-top: 1px solid #74819c;
 }
 
 .address {
@@ -184,7 +184,7 @@
   color: $black;
   position: relative;
 
-    &::after {
+  &::after {
     content: "";
     position: absolute;
     bottom: -1px;
@@ -192,8 +192,8 @@
     width: 0%;
     height: 1px;
     background-color: $black;
-    transition: width .2s ease-in-out;
-    transform:translateX(-50%);
+    transition: width 0.2s ease-in-out;
+    transform: translateX(-50%);
   }
 
   &:hover::after,
@@ -244,7 +244,7 @@
     margin-bottom: 29px;
   }
 
-  .filter__input {
+  .filter input {
     width: calc(50% - 30px);
   }
 
@@ -324,11 +324,11 @@
     display: block;
   }
 
-  .filter__input {
+  .filter input {
     width: 100%;
   }
 
-  .filter__input:not(:first-of-type) {
+  .filter input:not(:first-of-type) {
     margin-top: 36px;
   }
 

@@ -45,15 +45,24 @@
   letter-spacing: -0.01em;
 }
 
-.training__image-wrapper {
+.training__image {
   position: relative;
   margin-left: 78px;
+  width: 660px;
+  height: 401px;
+  background-image: url("../img/training@1x.png");
+  background-size: 660px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-color: transparent;
 }
 
-.training__image {
-  display: block;
-  width: 100%;
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .training__image {
+    background-image: url("../img/training@2x.png");
+  }
 }
+
 
 .training__video-wrapper {
   position: absolute;
@@ -143,15 +152,25 @@
 
   .training-text p {
     margin: 0 auto 43px;
-    padding: 0 50px 0;
+    padding: 0 51px;
   }
 
   .training-text p:not(:first-of-type) {
     display: none;
   }
 
-  .training__image-wrapper {
-    margin-left: 0;
+  .training__image {
+    margin: 0 auto;
+    width: 678px;
+    height: 345px;
+    background-image: url("../img/training-lap@1x.png");
+    background-size: 678px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .training__image {
+      background-image: url("../img/training-lap@2x.png");
+    }
   }
 
   .training__video-wrapper {
@@ -208,11 +227,24 @@
     padding-right: 30px;
   }
 
+  .training__image {
+    width: 320px;
+    height: 520px;
+    background-image: url("../img/training-mob@1x.png");
+    background-size: 320px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .training__image {
+      background-image: url("../img/training-mob@2x.png");
+    }
+  }
+
   .training__video-wrapper {
     margin-top: 40px;
-    position: relative;
+    width: 100%;
     left: 0;
-    top: 0;
+    bottom: 0;
     transform: none;
   }
 

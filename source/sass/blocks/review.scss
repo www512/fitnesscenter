@@ -110,12 +110,13 @@
   display: none;
 }
 
-.review__image {
+.review__item img {
   position: absolute;
   width: 80px;
   height: 80px;
   left: 62px;
   top: 62px;
+  background-color: transparent;
 }
 
 @media (max-width: $laptop-width) {

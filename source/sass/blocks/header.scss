@@ -1,4 +1,5 @@
 .header {
+  flex: 1 0 auto;
   position: absolute;
   left: 0;
   top: 0;
@@ -16,7 +17,7 @@
   align-items: center;
   max-width: $desktop-width;
   padding-top: 30px;
-  padding-bottom: 30px;;
+  padding-bottom: 30px;
 }
 
 .logo {
@@ -37,8 +38,8 @@
     width: 0%;
     height: 1px;
     background-color: $white;
-    transition: width .2s ease-in-out;
-    transform:translateX(-50%);
+    transition: width 0.2s ease-in-out;
+    transform: translateX(-50%);
   }
 
   &:hover::after,
@@ -61,6 +62,7 @@
   text-decoration: none;
   color: $white;
   position: relative;
+  outline: none;
 
   &::after {
     content: "";
@@ -70,8 +72,8 @@
     width: 0%;
     height: 1px;
     background-color: $white;
-    transition: width .2s ease-in-out;
-    transform:translateX(-50%);
+    transition: width 0.2s ease-in-out;
+    transform: translateX(-50%);
   }
 
   &:hover::after,
@@ -97,8 +99,8 @@
   }
 
   .logo {
-  font-size: 24px;
-  line-height: 24px;
+    font-size: 24px;
+    line-height: 24px;
   }
 
   .header__phone {

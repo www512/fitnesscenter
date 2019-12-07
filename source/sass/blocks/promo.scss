@@ -113,7 +113,7 @@
 
 .promo__button:hover,
 .promo__button:focus {
-  background: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
 }
 
 .promo__button:active {
@@ -169,7 +169,7 @@
   }
 
   .promo h3 {
-    margin-left: 0px;
+    margin-left: 0;
     font-size: 12px;
     line-height: 115%;
   }
@@ -187,7 +187,7 @@
   }
 
   .promo__time {
-    margin-left: 0px;
+    margin-left: 0;
     margin-right: 5px;
     font-size: 24px;
   }
