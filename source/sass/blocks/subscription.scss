@@ -1,5 +1,5 @@
 .subscription {
-  padding: 118px 15px 119px;
+  padding: 118px 15px 120px;
   background-color: #f8f9fc;
 }
 
@@ -21,7 +21,7 @@
 
 .subscription__item a {
   padding-top: 63px;
-  padding-bottom: 68px;
+  padding-bottom: 67px;
   display: block;
   text-decoration: none;
   cursor: pointer;
@@ -47,9 +47,8 @@
   color: $black;
 }
 
-.subscription__item h4 {
+.subscription__item p {
   margin: 0;
-  margin-bottom: 65px;
   font-family: $roboto;
   font-style: normal;
   font-weight: normal;
@@ -58,8 +57,9 @@
   color: $grey;
 }
 
-.subscription__item p {
-  margin: 0;
+.subscription__coast {
+  display: inline-block;
+  margin-top: 65px;
   margin-bottom: 34px;
   position: relative;
   font-family: $roboto;
@@ -254,11 +254,7 @@
     margin-bottom: 10px;
   }
 
-  .subscription__item h4 {
-    margin-bottom: 64px;
-  }
-
-  .subscription__item p {
+  .subscription__coast {
     margin-bottom: 34px;
   }
 
@@ -345,11 +341,8 @@
     line-height: 110.16%;
   }
 
-  .subscription__item h4 {
-    margin-bottom: 53px;
-  }
-
-  .subscription__item p {
+  .subscription__coast {
+    margin-top: 53px;
     margin-bottom: 30px;
     font-size: 48px;
   }
