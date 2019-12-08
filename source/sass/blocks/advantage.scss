@@ -44,12 +44,6 @@
   margin-left: calc(100% - 2 * 340px);
 }
 
-.advantage__item:first-of-type .advantage__block-number {
-  background: linear-gradient(155deg, #d10a42 10%, #0041ca 45%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .advantage__item:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
@@ -112,16 +106,26 @@
   margin-right: 30px;
 }
 
-.advantage__block-number {
-  margin: 0;
-  font-family: $roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 71px;
-  line-height: 100%;
-  background: linear-gradient(165deg, #d10a42 10%, #0041ca 80%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.advantage__block svg {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  fill: blue;
+}
+
+.advantage__block .advantage__number-900 {
+  fill: url("#advantage__number-900");
+}
+
+.advantage__block .advantage__number-70 {
+  fill: url("#advantage__number-70");
+}
+
+.advantage__block .advantage__number-350 {
+  fill: url("#advantage__number-350");
+}
+
+.advantage__block .advantage__number-5 {
+  fill: url("#advantage__number-5");
 }
 
 .advantage__block p {
@@ -202,8 +206,26 @@
     margin-left: 0;
   }
 
-  .advantage__block-number {
-    font-size: 58px;
+  .advantage__block svg {
+    margin-top: 7px;
+    margin-bottom: 0;
+    height: 43px;
+  }
+
+  .advantage__block .advantage__number-900 {
+    width: 88px;
+  }
+
+  .advantage__block .advantage__number-70 {
+    width: 57px;
+  }
+
+  .advantage__block .advantage__number-350 {
+    width: 88px;
+  }
+
+  .advantage__block .advantage__number-5 {
+    width: 58px;
   }
 
   .advantage__text {
@@ -319,7 +341,7 @@
   }
 
   .advantage__text p {
-    padding: 0 30px;
+    padding: 0 31px;
   }
 
   .advantage__cover {
@@ -341,15 +363,5 @@
   .advantage__cover p {
     margin-top: 0;
     line-height: 150%;
-  }
-
-  .advantage__item:first-of-type .advantage__block-number {
-    background: linear-gradient(155deg, #d10a42 33%, #0041ca 50%);
-    background-clip: text;
-  }
-
-  .advantage__block-number {
-    background: linear-gradient(165deg, #d10a42 33%, #0041ca 62%);
-    background-clip: text;
   }
 }
