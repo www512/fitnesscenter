@@ -155,7 +155,7 @@
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 
   &::after {
@@ -180,8 +180,9 @@
 }
 
 .subscription__item {
+  margin-right: 40px;
   box-sizing: border-box;
-  width: 31%;
+  width: 360px;
   background-color: $white;
   z-index: 1;
 }
@@ -190,9 +191,8 @@
   margin-top: 40px;
 }
 
-.subscription__item:nth-child(3n+5) {
-  margin-right: auto;
-  margin-left: 40px;
+.subscription__item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .subscription__button {
@@ -300,11 +300,6 @@
 
   .subscription__item:nth-child(n+4) {
     margin-top: 0;
-  }
-
-  .subscription__item:nth-child(3n+5) {
-    margin-right: 0;
-    margin-left: 0;
   }
 
   .subscription__item:not(:first-of-type) {
