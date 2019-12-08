@@ -29,6 +29,7 @@
   text-decoration: none;
   color: $white;
   position: relative;
+  outline: none;
 
   &::after {
     content: "";

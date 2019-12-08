@@ -131,7 +131,6 @@
   padding: 0 5px;
   list-style: none;
   display: flex;
-  /*justify-content: space-between;*/
   flex-wrap: wrap;
   position: relative;
   width: 100%;
@@ -188,6 +187,7 @@
   text-decoration: none;
   color: $black;
   position: relative;
+  outline: none;
 
   &::after {
     content: "";

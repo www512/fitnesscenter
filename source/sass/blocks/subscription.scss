@@ -26,6 +26,7 @@
   text-decoration: none;
   cursor: pointer;
   position: relative;
+  outline: none;
 
   &:hover,
   &:focus {
@@ -117,6 +118,7 @@
   font-size: 20px;
   line-height: 150%;
   color: rgba(16, 38, 84, 0.5);
+  outline: none;
 
   &::before {
     content: "";

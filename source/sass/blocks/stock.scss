@@ -90,6 +90,7 @@
   text-transform: uppercase;
   color: $white;
   text-decoration: none;
+  outline: none;
 
   &::before {
     content: "";
@@ -168,6 +169,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #1c3374;
+  outline: none;
 
   &::before {
     content: "";

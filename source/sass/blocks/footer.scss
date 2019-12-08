@@ -38,6 +38,7 @@
   line-height: 16px;
   color: $white;
   position: relative;
+  outline: none;
 
   &::after {
     content: "";
@@ -84,6 +85,10 @@
 
 .footer__social-icon {
   fill: $white;
+}
+
+.footer__social-item a {
+  outline: none;
 }
 
 .footer__social-item a:hover > .footer__social-icon,
