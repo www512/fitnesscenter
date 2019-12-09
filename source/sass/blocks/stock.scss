@@ -30,6 +30,7 @@
   background-position: right top;
   background-repeat: no-repeat;
   background-color: #ed0233;
+  height: 100%
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -44,9 +45,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
   color: $white;
   width: 50%;
   min-height: 462px;
+  height: 100%;
 }
 
 .stock__year-title {
