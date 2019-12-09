@@ -45,6 +45,7 @@
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -60,7 +61,6 @@ body {
   font-style: normal;
   color: $black;
   background-color: $bg-color;
-  overflow-x: hidden;
 }
 
 .visually-hidden {
