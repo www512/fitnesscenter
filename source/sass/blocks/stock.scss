@@ -209,7 +209,8 @@
 
   .stock__content {
     margin: 0 auto;
-    display: block;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 678px;
   }
 
@@ -239,7 +240,6 @@
   }
 
   .stock__item {
-    display: block;
     padding: 25px 35px 37px;
     width: calc(50% - 15px);
     background-image: url("../img/stock-border-lap.svg");
@@ -305,7 +305,7 @@
   }
 
   .stock__list {
-    display: block;
+    flex-direction: column;
   }
 
   .stock__item:first-of-type {
