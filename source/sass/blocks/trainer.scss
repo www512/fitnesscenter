@@ -105,13 +105,13 @@
 
 .trainer__list-slider:hover,
 .trainer__list-slider:focus {
-  width: 40px;
-  height: 40px;
+  border-left: 1px solid $black;
+  border-bottom: 1px solid $black;
 }
 
 .trainer__list-slider:active {
-  width: 24px;
-  height: 24px;
+  border-left: 1px solid #afafaf;
+  border-bottom: 1px solid #afafaf;
 }
 
 .trainer__link {
@@ -363,17 +363,6 @@
 
   .trainer__list-slider {
     top: calc(50% - 6px);
-    width: 14px;
-    height: 14px;
-  }
-
-  .trainer__list-slider:hover,
-  .trainer__list-slider:focus {
-    width: 30px;
-    height: 30px;
-  }
-
-  .trainer__list-slider:active {
     width: 14px;
     height: 14px;
   }
