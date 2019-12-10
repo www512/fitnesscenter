@@ -46,3 +46,32 @@ if (form) {
     }
   });
 }
+
+//Slider review
+var reviewSlides = document.querySelectorAll('.review__item');
+var reviewCurrentSlide = 0;
+var reviewButtonPrevious = document.querySelector('.review__list-slider-prev');
+var reviewButtonNext = document.querySelector('.review__list-slider-next');
+
+reviewButtonPrevious.onclick = function() {
+  reviewPreviousSlide();
+};
+
+reviewButtonNext.onclick = function() {
+  reviewNextSlide();
+};
+
+function reviewPreviousSlide() {
+  reviewSlides[reviewCurrentSlide].classList.remove("showing");
+  goToReviewSlide(reviewCurrentSlide - 1);
+}
+
+function reviewNextSlide() {
+  reviewSlides[reviewCurrentSlide].classList.remove("showing");
+  goToReviewSlide(reviewCurrentSlide + 1);
+}
+
+function goToReviewSlide(n) {
+  reviewCurrentSlide = (n + reviewSlides.length) % reviewSlides.length;
+  reviewSlides[reviewCurrentSlide].classList.add("showing");
+}
